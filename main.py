@@ -24,6 +24,10 @@ payload = {'chat_id': CHAT_ID, 'text': mensagem}
 response = requests.post(url, data=payload)
 print(f"[{datetime.now(HORARIO_BSB).strftime('%H:%M:%S')}] Sinal enviado.")
 return response
+payload = {'chat_id': CHAT_ID, 'text': mensagem}
+response = requests.post(url, data=payload)
+print(f"[{datetime.now(HORARIO_BSB).strftime('%H:%M:%S')}] Sinal enviado.")
+return response
 
 # === ESTRATÉGIA 1: SUPORTE + PULLBACK COM REJEIÇÃO ===
 def estrategia_suporte_resistencia(ativo):
