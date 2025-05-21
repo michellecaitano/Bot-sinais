@@ -1,0 +1,5 @@
+requests
+pytz
+ta
+pandas
+python-binance
